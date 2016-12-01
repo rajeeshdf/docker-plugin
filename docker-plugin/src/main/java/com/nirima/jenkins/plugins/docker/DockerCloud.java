@@ -310,7 +310,7 @@ public class DockerCloud extends Cloud {
 
         // contribute launcher specific options
         if (launcher != null) {
-            launcher.appendContainerConfig(dockerTemplate, containerConfig);
+            launcher.appendContainerConfig(dockerTemplate, containerConfig, dockerClient);
         }
 
         // create
